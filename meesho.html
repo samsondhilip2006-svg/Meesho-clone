@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meesho Clone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        nav {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 40px;
+            gap: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav h1 {
+            color: #9f2089;
+            font-size: 32px;
+        }
+
+        nav input {
+            width: 450px;
+            padding: 12px;
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .login {
+            background-color: #9f2089;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+
+        .categories {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .banner {
+            background-color: #fce8f7;
+            margin: 20px 50px;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .banner h2 {
+            color: #9f2089;
+            font-size: 38px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .shop {
+            background-color: #9f2089;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .banner-image {
+            font-size: 120px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 30px;
+            color: #333;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px 50px;
+        }
+
+        .product {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product-image {
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: #f5f5f5;
+        }
+
+        .product h3 {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .product p {
+            color: #777;
+            margin: 8px 0;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .buy {
+            width: 100%;
+            margin-top: 12px;
+            padding: 10px;
+            background-color: #9f2089;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>meesho</h1>
+
+        <input type="text" placeholder="Search for products and more">
+
+        <a href="#">Download App</a>
+
+        <a href="#">Become a Supplier</a>
+
+        <button class="login">Login</button>
+
+        <a href="#">Cart 🛒</a>
+    </nav>
+
+    <div class="categories">
+        <a href="#">Women Ethnic</a>
+        <a href="#">Women Western</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Kitchen</a>
+        <a href="#">Beauty</a>
+        <a href="#">Jewellery</a>
+        <a href="#">Bags</a>
+    </div>
+
+    <div class="banner">
+
+        <div>
+            <h2>Lowest Prices</h2>
+            <p>Best Quality Products</p>
+            <button class="shop">Shop Now</button>
+        </div>
+
+        <div class="banner-image">
+            🛍️
+        </div>
+
+    </div>
+
+    <h2 class="heading">Trending Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="product-image">👗</div>
+            <h3>Women's Dress</h3>
+            <p>Stylish & Comfortable</p>
+            <div class="price">₹499</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">👕</div>
+            <h3>Men's T-Shirt</h3>
+            <p>Cotton Casual Wear</p>
+            <div class="price">₹299</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">👠</div>
+            <h3>Women's Footwear</h3>
+            <p>Latest Fashion</p>
+            <div class="price">₹399</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">👜</div>
+            <h3>Hand Bag</h3>
+            <p>Trendy Hand Bag</p>
+            <div class="price">₹349</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">💄</div>
+            <h3>Beauty Products</h3>
+            <p>Makeup Collection</p>
+            <div class="price">₹249</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">🏠</div>
+            <h3>Home Products</h3>
+            <p>Useful Home Items</p>
+            <div class="price">₹199</div>
+            <button class="buy">Buy Now</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Meesho Clone | Created using HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
